@@ -84,7 +84,6 @@ e aplicação de lógica condicional para garantir a integridade dos dados inser
     }
 
     //Método Getter
-    
     public String getNome() {
         return nome;
     }
@@ -123,7 +122,6 @@ e aplicação de lógica condicional para garantir a integridade dos dados inser
     }
 
 // Método Setter
-
     public void setNome(String nome) { /* V */
         this.nome = nome;
 
@@ -244,12 +242,20 @@ e aplicação de lógica condicional para garantir a integridade dos dados inser
         }
     }
 
-    // Métodos da classe
+    // Métodos da classe PessoaDesafio
     public void exibirDetalhes() {
-        System.out.println("");
+        System.out.println("Nome: " + getNome() + "Idade: " + getIdade() + "Endereço: " + getEndereco() + "Telefone: " + getTelefone() + "Email: " + getEmail() + "Cpf: " + getCpf() + "Sexo: " + getSexo() + "Estado: " + getSexo() + "Estado Civil: " + getEstadoCivil() + "Profissão: " + getProfissao() + "Salario: " + getSalario() + "Nacionalidade: " + getNacionalidade() + "Filhos: " + getFilhos());
+    }
+    public void atualizarEndereco() {
+        System.out.println();
     }
 
+    //Menu principal
+    public static void main(String[] args) {
+        PessoaDesafio desafio = new PessoaDesafio("Jacarezinho", 15, "Arvore", "556177777", "Jacarezinho", "77777558849", 'M', 'S', "Caçar peixinhos", 10000000, "Brasilerinho", 15);
+        desafio.exibirDetalhes();
+        desafio.atualizarEndereco();
+    }
   
 
 }
-
